@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Hope Farm Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  
+
+  <section class="content">
+    <h2>Our Projects & Initiatives</h2>
+    <p>Hope Farm Foundation is committed to building a sustainable agricultural future through impactful projects. Here are some of our key initiatives:</p>
+
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1598515213695-dc5cbbfd3b52" alt="Community Farming">
+        <h3>Community Farming</h3>
+        <p>We bring communities together to grow food collectively, promoting collaboration, knowledge-sharing, and food security.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1589923188900-45f6af36a940" alt="Youth Empowerment">
+        <h3>Youth Empowerment</h3>
+        <p>Training and supporting young farmers with modern techniques, tools, and mentorship to secure the future of agriculture.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1518081461904-9d8f136351c2" alt="Sustainable Irrigation">
+        <h3>Sustainable Irrigation</h3>
+        <p>Implementing eco-friendly irrigation systems to conserve water while maximizing crop yield in rural farming communities.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Organic Farming">
+        <h3>Organic Farming</h3>
+        <p>Promoting organic farming practices that protect the soil, improve crop quality, and safeguard the environment.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hope Farm Foundation.</p>
+  </footer>
+
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+</body>
+</html>

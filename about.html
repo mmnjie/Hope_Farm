@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Hope Farm Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div id="navbar"></div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: url("images/farm-bg.jpg") no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #2d6a4f;
+      border-left: 5px solid #95d5b2;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .about-content img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #2d6a4f;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+    <p>Together we grow for a sustainable future</p>
+  </header>
+
+  <section>
+    <div class="about-content">
+      <div>
+        <h2>Background</h2>
+        <p>
+          Hope Farm Foundation is a voluntary agricultural initiative focused on building strong 
+          communities, improving farming techniques, and supporting young farmers. 
+        </p>
+        <p>
+          We aim to empower rural communities by promoting sustainable agriculture, 
+          increasing food security, and fostering innovation in farming practices.
+        </p>
+      </div>
+      <img src="images/about1.jpg" alt="Community farming">
+    </div>
+
+    <div class="about-content">
+      <img src="images/about2.jpg" alt="Volunteers working on the farm">
+      <div>
+        <h2>Why Hope Farm Foundation?</h2>
+        <p>
+          Many farming communities face challenges such as low productivity, 
+          limited access to resources, and vulnerability to climate change. 
+        </p>
+        <p>
+          Hope Farm Foundation was created to support farmers with training, 
+          tools, and resources to overcome these barriers, particularly for 
+          youth and women who play a vital role in agriculture.
+        </p>
+        <p>
+          Our mission is to transform agriculture into a sustainable livelihood 
+          that reduces poverty, strengthens food security, and creates 
+          opportunities for future generations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Hope Farm Foundation. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
+ <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+</body>
+</html>
+
+
+
+
+
+

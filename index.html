@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Farm Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="navbar"></div>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to Hope Farm Foundation</h1>
+    <p>Together we grow for a sustainable future.</p>
+    <a href="volunteer.html" class="btn-primary">Join as a Volunteer</a>
+  </header>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      Hope Farm Foundation is dedicated to promoting sustainable agriculture, empowering local farmers, 
+      and ensuring food security for future generations. We believe in hands-on learning, 
+      community-driven farming, and protecting our environment.
+    </p>
+  </section>
+
+  <!-- Volunteer Highlights -->
+  <section class="volunteer-highlights">
+    <h2>Volunteer With Us</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/photo1.jpg" alt="Community Farming">
+        <h3>Community Farming</h3>
+        <p>Work alongside local farmers to grow organic produce that supports families and schools.</p>
+      </div>
+      <div class="card">
+        <img src="images/photo2.jpg" alt="Youth Empowerment">
+        <h3>Youth Empowerment</h3>
+        <p>Mentor and inspire the next generation of agricultural leaders through workshops and training.</p>
+      </div>
+      <div class="card">
+        <img src="images/photo3.jpg" alt="Sustainable Irrigation">
+        <h3>Sustainable Irrigation</h3>
+        <p>Help set up eco-friendly irrigation systems that conserve water and improve crop yields.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Ready to Make a Difference?</h2>
+    <p>Join our volunteer program and be part of a community working towards sustainable agriculture.</p>
+    <a href="volunteer.html" class="btn-secondary">Become a Volunteer</a>
+  </section>
+
+  <section class="news-events">
+  <h2>Latest News & Events</h2>
+  <p>Stay updated with our workshops, community farming projects, harvests, and volunteer activities.</p>
+
+  <div class="news-grid">
+    <div class="news-card">
+      <img src="https://images.unsplash.com/photo-1606788075761-9af62e3f3a6e" alt="Organic Workshop">
+      <h3>Organic Farming Workshop</h3>
+      <p>Join our hands-on training session on sustainable farming techniques. Learn composting, irrigation, and more.</p>
+      <a href="#" class="btn-secondary">Read More</a>
+    </div>
+
+    <div class="news-card">
+      <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713" alt="Harvest Day">
+      <h3>Community Harvest Day</h3>
+      <p>Celebrate the season with our farmers! Volunteers helped gather fresh produce for local food programs.</p>
+      <a href="#" class="btn-secondary">View Photos</a>
+    </div>
+
+    <div class="news-card">
+      <img src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4" alt="Youth Empowerment">
+      <h3>Youth Empowerment Program</h3>
+      <p>Engaging young people in agriculture and entrepreneurship to secure the next generation of farmers.</p>
+      <a href="https://rootsproject.gm/from-inputs-to-ownership-the-incredible-journey-of-the-jahally-pacharr-rice-farmers-organization/" target="_blank" class="btn-secondary">Learn More</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Hope Farm Foundation. All rights reserved.</p>
+  </footer>
+
+  
+
+  <!-- Script to load nav.html -->
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+</body>
+</html>
+
+
+
