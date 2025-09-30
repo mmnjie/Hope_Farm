@@ -84,13 +84,10 @@
   </div>
 </section>
 
-
   <!-- Footer -->
   <footer>
     <p>© 2025 Hope Farm Foundation. All rights reserved.</p>
   </footer>
-
-  
 
   <!-- Script to load nav.html -->
   <script>
@@ -101,5 +98,24 @@
 </body>
 </html>
 
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
 
+  <!-- Load Navbar -->
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+
+    // Hamburger toggle logic (works after navbar is loaded)
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("hamburger")) {
+        document.getElementById("navLinks").classList.toggle("show");
+      }
+    });       
 

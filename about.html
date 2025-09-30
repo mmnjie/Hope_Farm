@@ -10,7 +10,7 @@
   <div id="navbar"></div>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -18,7 +18,7 @@
     }
     header {
       background: url("images/farm-bg.jpg") no-repeat center center/cover;
-      color: #fff;
+      color: black;
       text-align: center;
       padding: 80px 20px;
     }
@@ -103,14 +103,15 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    © 2025 Hope Farm Foundation. All rights reserved.
+    <p>© 2025 Hope Farm Foundation. All rights reserved.</p>
   </footer>
 
-</body>
-</html>
+  
 
- <script>
+  <!-- Script to load nav.html -->
+  <script>
     fetch("nav.html")
       .then(response => response.text())
       .then(data => document.getElementById("navbar").innerHTML = data);
@@ -119,7 +120,27 @@
 </html>
 
 
+  
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
 
 
 
+  <!-- Load Navbar -->
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
 
+    // Hamburger toggle logic (works after navbar is loaded)
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("hamburger")) {
+        document.getElementById("navLinks").classList.toggle("show");
+      }
+    });       
