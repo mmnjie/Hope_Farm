@@ -3,114 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Hope Farm Foundation</title>
+  <title>Projects - Hope Farm Foundation</title>
   <link rel="stylesheet" href="styles.css">
-  </head>
-<body>
-  <div id="navbar"></div>
-  <style>
-    body {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-    }
-    header {
-      background: url("images/farm-bg.jpg") no-repeat center center/cover;
-      color: black;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      color: #2d6a4f;
-      border-left: 5px solid #95d5b2;
-      padding-left: 10px;
-      margin-bottom: 20px;
-    }
-    .about-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-    .about-content img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #2d6a4f;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-  </style>
 </head>
 <body>
+  <div id="navbar"></div>
+  
 
-  <header>
-    <h1>About Us</h1>
-    <p>Together we grow for a sustainable future</p>
-  </header>
-
-  <section>
-    <div class="about-content">
-      <div>
-        <h2>Background</h2>
-        <p>
-          Hope Farm Foundation is a voluntary agricultural initiative focused on building strong 
+  <section class="content">
+    <h2>About Us</h2>
+    <p>Hope Farm Foundation is committed to building a sustainable agricultural future through impactful projects. Here are some of our key initiatives. Hope Farm Foundation is a voluntary agricultural initiative focused on building strong 
           communities, improving farming techniques, and supporting young farmers. 
         </p>
-        <p>
-          We aim to empower rural communities by promoting sustainable agriculture, 
-          increasing food security, and fostering innovation in farming practices.
-        </p>
-      </div>
-      <img src="images/about1.jpg" alt="Community farming">
-    </div>
+        <p></p>
 
-    <div class="about-content">
-      <img src="images/about2.jpg" alt="Volunteers working on the farm">
-      <div>
-        <h2>Why Hope Farm Foundation?</h2>
-        <p>
-          Many farming communities face challenges such as low productivity, 
-          limited access to resources, and vulnerability to climate change. 
-        </p>
-        <p>
-          Hope Farm Foundation was created to support farmers with training, 
-          tools, and resources to overcome these barriers, particularly for 
-          youth and women who play a vital role in agriculture.
-        </p>
-        <p>
-          Our mission is to transform agriculture into a sustainable livelihood 
-          that reduces poverty, strengthens food security, and creates 
-          opportunities for future generations.
-        </p>
+        <h3>Our Values</h3>
+        <ul>
+          <li><strong>Sustainability:</strong> We promote eco-friendly farming practices that protect the environment and ensure long-term food security.</li>
+          <li><strong>Community:</strong> We believe in the power of collective action and work closely with local communities to achieve our goals.</li>
+          <li><strong>Empowerment:</strong> We provide training, resources, and support to empower farmers, especially the youth, to succeed in agriculture.</li>
+          <li><strong>Innovation:</strong> We embrace modern techniques and technologies to enhance agricultural productivity and sustainability.</li>
+        </ul>
+        <p></p>
+        <h3>Our Projects & Initiatives</h3>
+        <p>Hope Farm Foundation is committed to building a sustainable agricultural future through impactful projects. Here are some of our key initiatives:</p>
+        
+
+
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1598515213695-dc5cbbfd3b52" alt="Community Farming">
+        <h3>Community Farming</h3>
+        <p>We bring communities together to grow food collectively, promoting collaboration, knowledge-sharing, and food security.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1589923188900-45f6af36a940" alt="Youth Empowerment">
+        <h3>Youth Empowerment</h3>
+        <p>Training and supporting young farmers with modern techniques, tools, and mentorship to secure the future of agriculture.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1518081461904-9d8f136351c2" alt="Sustainable Irrigation">
+        <h3>Sustainable Irrigation</h3>
+        <p>Implementing eco-friendly irrigation systems to conserve water while maximizing crop yield in rural farming communities.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Organic Farming">
+        <h3>Organic Farming</h3>
+        <p>Promoting organic farming practices that protect the soil, improve crop quality, and safeguard the environment.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Hope Farm Foundation. All rights reserved.</p>
+    <p>&copy; 2025 Hope Farm Foundation.</p>
   </footer>
 
-  
-
-  <!-- Script to load nav.html -->
   <script>
     fetch("nav.html")
       .then(response => response.text())
@@ -119,28 +69,8 @@
 </body>
 </html>
 
-
-  
-
 <script>
   function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("show");
   }
 </script>
-
-
-
-  <!-- Load Navbar -->
-  <script>
-    fetch("navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-
-    // Hamburger toggle logic (works after navbar is loaded)
-    document.addEventListener("click", function (e) {
-      if (e.target.classList.contains("hamburger")) {
-        document.getElementById("navLinks").classList.toggle("show");
-      }
-    });       
