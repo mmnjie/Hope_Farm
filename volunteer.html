@@ -9,6 +9,7 @@
 <body>
   <div id="navbar"></div>
 
+
   <section class="content">
     <h2>Volunteer With Us</h2>
     <p>Join our mission to support sustainable farming, empower local communities, and promote food security. Fill out the form below to become a volunteer with Hope Farm Foundation.</p>
@@ -41,6 +42,7 @@
   <button type="submit">Submit Application</button>
 </form>
 
+
 <script>
     fetch("nav.html")
       .then(response => response.text())
@@ -57,8 +59,109 @@
 </script>
 
 
+<!-- Include Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
-  
+<section class="volunteers">
+  <h2>Meet our volunteers</h2>
+  <p>
+    Hear from some of our Wish Makers about their experiences volunteering.
+  </p>
 
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Card 1 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="images/volunteer1.jpg" alt="Volunteer 1" />
+          <div class="card-content">
+            <h3>Sian, Wales</h3>
+            <p>
+              “I wanted to volunteer for Make-A-Wish as I wanted to do something
+              to bring happy moments and memories...”
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Card 2 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="images/volunteer2.jpg" alt="Volunteer 2" />
+          <div class="card-content">
+            <h3>Ahmed, South West</h3>
+            <p>
+              “What surprised me the most about Make-A-Wish was that the moment
+              I joined as an Arabic interpreter...”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="images/volunteer3.jpg" alt="Volunteer 3" />
+          <div class="card-content">
+            <h3>Sumaiya, East Midlands</h3>
+            <p>
+              “I would say definitely give volunteering a go because everyone
+              who contributes to a wish comes from...”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="images/volunteer4.jpg" alt="Volunteer 4" />
+          <div class="card-content">
+            <h3>Kelly, Northern Ireland</h3>
+            <p>
+              “I’ve had numerous roles where I’ve been the first point of
+              contact for wish children and their families...”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
 
