@@ -8,35 +8,121 @@
 </head>
 <body>
   <div id="navbar"></div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
 
-    <div class="card">
-      <h1>About Us</h1>
-      <p> 
-          Hope Farm Foundation was created to support farmers with training, 
-          tools, and resources to overcome these barriers, particularly for 
-          youth and women who play a vital role in agriculture. We aim to empower rural communities by promoting sustainable agriculture, 
-          increasing food security, and fostering innovation in farming practices. 
-      </p>  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #2e7d32;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #1b5e20;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      text-decoration: none;
+      margin-right: 10px;
+      font-size: 1.3rem;
+      color: #2e7d32;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #66bb6a;
+    }
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
 
-      </p>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Community Farming</h3>
-          <p>We bring communities together to grow food collectively, promoting collaboration, knowledge-sharing, and food security.</p>
-        </div>
-        <div class="project-card">
-          <h3>Youth Empowerment</h3>
-          <p>Training and supporting young farmers with modern techniques, tools, and mentorship to secure the future of agriculture.</p>
-        </div>
-        
-        <div class="project-card">
-          <h3>Organic Farming</h3>
-          <p>Promoting organic farming practices that protect the soil, improve crop quality, and safeguard the environment.</p>
-        </div>
+    
+
+  <header>
+    <h1>Hope Farm Foundation</h1>
+    <p>Empowering Farmers, Youth, and Communities</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Hope Farm Foundation was created to support farmers with training, tools, and resources to overcome barriers, particularly for youth and women who play a vital role in agriculture. 
+      We aim to empower rural communities by promoting sustainable agriculture, increasing food security, and fostering innovation in farming practices.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Programs</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Community Farming</h3>
+        <p>We bring communities together to grow food collectively, promoting collaboration, knowledge-sharing, and food security.</p>
+      </div>
+      <div class="card">
+        <h3>Youth Empowerment</h3>
+        <p>Training and supporting young farmers with modern techniques, tools, and mentorship to secure the future of agriculture.</p>
+      </div>
+      <div class="card">
+        <h3>Organic Farming</h3>
+        <p>Promoting organic farming practices that protect the soil, improve crop quality, and safeguard the environment.</p>
       </div>
     </div>
-        
+  </section>
 
+  
   <section id="team">
   <h2>Meet Our Team</h2>
   <div class="team-container">
@@ -80,10 +166,12 @@
       </div>
     </div>
 
-    <!-- Add other members similarly -->
 
-  </div>
+    <!-- Add other members similarly -->
+  </div>  
 </section>
+
+
 
 <!-- FontAwesome for social icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -149,13 +237,9 @@
 }
 </style>
 
-
-
-
   <footer>
     <p>&copy; 2025 Hope Farm Foundation.</p>
   </footer>
-
 
   <script>
     fetch("nav.html")
@@ -170,6 +254,3 @@
     document.getElementById("navLinks").classList.toggle("show");
   }
 </script>
-
-
-
