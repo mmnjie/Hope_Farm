@@ -8,7 +8,6 @@
 </head>
 <body>
   <div id="navbar"></div>
-  
 
     <div class="card">
       <h1>About Us</h1>
@@ -29,22 +28,134 @@
           <h3>Youth Empowerment</h3>
           <p>Training and supporting young farmers with modern techniques, tools, and mentorship to secure the future of agriculture.</p>
         </div>
-        <div class="project-card">
-          <h3>Sustainable Irrigation</h3>
-          <p>Implementing eco-friendly irrigation systems to conserve water while maximizing crop yield in rural farming communities.</p>
-        </div>
+        
         <div class="project-card">
           <h3>Organic Farming</h3>
           <p>Promoting organic farming practices that protect the soil, improve crop quality, and safeguard the environment.</p>
         </div>
       </div>
     </div>
+        
+
+  <section id="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+
+    <!-- Team Member 1 -->
+    <div class="team-member">
+      <img src="images/katim.jpg" alt="Mr. Katim Touray">
+      <h3>Mr. Katim Touray</h3>
+      <p class="role">Internal Auditor</p>
+      <p class="desc">Responsible for evaluating the effectiveness of internal controls, risk management, and governance processes.</p>
+      <div class="team-overlay">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+     </div>
+   </div>
+
+    <!-- Team Member 2 -->
+    <div class="team-member">
+      <img src="images/fatoumata-jatta.jpg" alt="Fatoumata Jatta">
+      <h3>Fatoumata Jatta</h3>
+      <p class="role">Accounts Clerk 2</p>
+      <p class="desc">Handles financial record-keeping, account reconciliation, and supporting accounting operations.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="team-member">
+      <img src="images/mamour-jagne.jpg" alt="Mamour Alieu Jagne">
+      <h3>Mamour Alieu Jagne</h3>
+      <p class="role">Project Director</p>
+      <p class="desc">Oversees project operations, ensures goals are met, and manages coordination across departments.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Add other members similarly -->
+
   </div>
-  
+</section>
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<style>
+#team {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+#team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+}
+
+.team-member .role {
+  font-weight: bold;
+  color: #555;
+}
+
+.team-member .desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+</style>
+
+
+
 
   <footer>
     <p>&copy; 2025 Hope Farm Foundation.</p>
   </footer>
+
 
   <script>
     fetch("nav.html")
@@ -59,3 +170,6 @@
     document.getElementById("navLinks").classList.toggle("show");
   }
 </script>
+
+
+
