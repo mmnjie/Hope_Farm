@@ -90,7 +90,6 @@ footer {
   margin-top: 1.5rem;
 }
 
-
 .donate-box {
   max-width: 700px;
   margin: 2rem auto;
@@ -832,5 +831,75 @@ footer .social-icons a:hover {
   margin: 0 auto;
   line-height: 1.6;
 }
+
+.bottom-info {
+  background: #2e7d32; /* Dark blue */
+  color: #fff;
+  padding: 30px 5px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.info-left, .info-right {
+  flex: 1;
+  min-width: 280px;
+  margin: 10px;
+}
+
+.info-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-left p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.social-links a {
+  margin: 0 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #00aced;
+}
+
+.info-right h4 {
+  margin-bottom: 10px;
+}
+
+.info-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-right ul li {
+  margin-bottom: 8px;
+}
+
+.info-right ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.info-right ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+ 
+
 
 

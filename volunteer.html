@@ -173,10 +173,7 @@
   </div>
 </section>
 
- <footer>
-    <p>&copy; 2025 Hope Farm Foundation.</p>
-  </footer>
-
+ 
 
 <!-- Include Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -207,4 +204,15 @@
   });
 </script>
 
+<footer>
+    <p>&copy; 2025 Hope Farm Foundation.</p>
+  </footer>
+
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("navbar").innerHTML = data);
+  </script>
+</body>
+</html>
 
