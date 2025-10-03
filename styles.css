@@ -13,6 +13,7 @@ body {
   padding: 1rem 1rem;
 }
 
+
 .logo {
   color: white;
   font-size: 1.5rem;
@@ -378,6 +379,7 @@ footer {
   padding: 15px 20px;
   background: #388e3c;
   color: white;
+  position: relative;
 }
 
 .navbar .logo {
@@ -399,9 +401,9 @@ footer {
 
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background: none;
-  border: none;
+  border: green;
   color: white;
   cursor: pointer;
 }
@@ -435,6 +437,8 @@ footer {
 .founder-intro {
   padding: 60px 20px;
   background-color: #f5fdf5;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .founder-container {
@@ -444,6 +448,10 @@ footer {
   align-items: center;
   max-width: 1000px;
   margin: auto;
+}
+
+.founder-image {
+  text-align: center;
 }
 
 .founder-image img {
@@ -464,6 +472,7 @@ footer {
   margin-bottom: 15px;
   line-height: 1.5;
 }
+
 
 /* Responsive: stack image above text on small screens */
 @media (max-width: 768px) {
@@ -498,7 +507,7 @@ footer {
 .founder-name {
   margin-top: 10px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #2d6a4f;
 }
 .founder-text h2 {
@@ -750,7 +759,7 @@ footer .social-icons a:hover {
 }
 
 .volunteers h2 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom:10px;
 }
 
@@ -768,8 +777,8 @@ footer .social-icons a:hover {
 }
 
 .card img {
-  width: 105%;
-  height: 300px;
+  width: 110%;
+  height: 290px;
   object-fit: cover;
 }
 
@@ -786,7 +795,7 @@ footer .social-icons a:hover {
 }
 
 .card-content p {
-  font-size: 0.95em;
+  font-size: 0.90em;
   line-height: 1.5;
 }
 
@@ -899,6 +908,12 @@ footer .social-icons a:hover {
 .info-right ul li a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
 
 
 
