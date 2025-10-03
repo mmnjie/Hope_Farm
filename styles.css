@@ -165,7 +165,7 @@ footer {
 
 .project-card img {
   width: 250%;
-  height: 200px;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -230,10 +230,10 @@ footer {
   padding: 100px 20px;
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
 }
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 15px 0;
 }
 .btn-primary {
@@ -307,13 +307,13 @@ footer {
 }
 
 .news-events h2 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 10px;
   color: #2e7d32;
 }
 
 .news-events p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 40px;
   color: #555;
 }
@@ -338,12 +338,12 @@ footer {
 
 .news-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
 .news-card h3 {
-  font-size: 1.3em;
+  font-size: 1.6em;
   margin: 15px 0 10px;
   color: #333;
 }
@@ -381,7 +381,7 @@ footer {
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -790,6 +790,8 @@ footer .social-icons a:hover {
   line-height: 1.5;
 }
 
+/* youtube video section */
+
 .watch-story {
   text-align: center;
   padding: 60px 20px;
@@ -797,13 +799,13 @@ footer .social-icons a:hover {
 }
 
 .watch-story h2 {
-  font-size: 2rem;
-  color: #0b0b3b;
+  font-size: 3rem;
+  color: #2e7d32;
   margin-bottom: 10px;
 }
 
 .watch-story .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #555;
   margin-bottom: 30px;
 }
@@ -832,6 +834,7 @@ footer .social-icons a:hover {
   line-height: 1.6;
 }
 
+/* Bottom Info Section */
 .bottom-info {
   background: #2e7d32; /* Dark blue */
   color: #fff;
@@ -896,6 +899,9 @@ footer .social-icons a:hover {
 .info-right ul li a:hover {
   text-decoration: underline;
 }
+
+
+
 
 
 
