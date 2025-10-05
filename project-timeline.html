@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Timeline | Hope Farm Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 0;
+      background: #f4f9f4;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background: linear-gradient(135deg, #228B22, #2e8b57);
+      color: white;
+      border-bottom: 5px solid #5aa85a;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    /* Filter buttons */
+    .filter-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .filter-buttons button {
+      background: #2e8b57;
+      color: #fff;
+      border: none;
+      margin: 5px;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .filter-buttons button:hover,
+    .filter-buttons button.active {
+      background: #7bc67b;
+      color: #fff;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px auto;
+      max-width: 900px;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: #5aa85a;
+      transform: translateX(-50%);
+      animation: growLine 2s ease;
+    }
+
+    .timeline-item {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      margin: 30px 0;
+      width: 80%;
+      position: relative;
+      padding: 20px 30px;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .timeline-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .timeline-item h2 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item span {
+      font-weight: bold;
+      color: #777;
+    }
+
+    .timeline-item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background: #228B22;
+      color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0, 0, 0, 0.7);
+      animation: fadeIn 0.5s ease;
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 8% auto;
+      padding: 20px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 700px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: popUp 0.6s ease;
+    }
+
+    .close {
+      color: #333;
+      float: right;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #e74c3c;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes growLine {
+      from { height: 0; }
+      to { height: 100%; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hope Farm Foundation</h1>
+    <p>Past, Present & Future Projects</p>
+  </header>
+
+  <!-- Filter buttons -->
+  <div class="filter-buttons">
+    <button class="active" onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('past')">Past</button>
+    <button onclick="filterProjects('ongoing')">Ongoing</button>
+    <button onclick="filterProjects('future')">Future</button>
+  </div>
+
+  <main class="timeline">
+    <div class="timeline-item past" onclick="openModal('modal1')">
+      <h2>Community Rice Field Initiative</h2>
+      <span>Past Project | 2022</span>
+      <p>Empowering local farmers through shared resources and organic cultivation methods.</p>
+      <img src="images/ricefarm.jpg" alt="Community Rice Field" />
+    </div>
+
+    <div class="timeline-item ongoing" onclick="openModal('modal2')">
+      <h2>Youth Agri-Tech Empowerment</h2>
+      <span>Ongoing Project | 2025</span>
+      <p>Training young farmers on sustainable and digital agriculture practices.</p>
+      <img src="images/agritech.jpg" alt="Youth Empowerment" />
+    </div>
+
+    <div class="timeline-item future" onclick="openModal('modal3')">
+      <h2>Green Village 2030</h2>
+      <span>Future Project | 2030</span>
+      <p>Our vision to create fully sustainable agricultural villages powered by innovation.</p>
+      <img src="images/greenvillage.jpg" alt="Green Village" />
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>Community Rice Field Initiative</h2>
+      <p>This project supported over 50 rural farmers in organic rice production, introducing irrigation and soil fertility techniques that improved yields by 40%.</p>
+      <img src="images/ricefarm1.jpg" alt="Rice Field" />
+      <img src="images/ricefarm2.jpg" alt="Rice Harvest" />
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>Youth Agri-Tech Empowerment</h2>
+      <p>In collaboration with agricultural institutions, this program focuses on digital farming, drone mapping, and hydroponic agriculture.</p>
+      <img src="images/agritech1.jpg" alt="Youth Training" />
+      <img src="images/agritech2.jpg" alt="Workshop" />
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Green Village 2030</h2>
+      <p>A model green community built around sustainable farming, renewable energy, and smart technology for future generations.</p>
+      <img src="images/greenvillage1.jpg" alt="Eco Village" />
+      <img src="images/greenvillage2.jpg" alt="Solar Farm" />
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      document.querySelectorAll(".modal").forEach((modal) => {
+        if (event.target == modal) modal.style.display = "none";
+      });
+    };
+
+    function filterProjects(category) {
+      const items = document.querySelectorAll(".timeline-item");
+      const buttons = document.querySelectorAll(".filter-buttons button");
+      buttons.forEach((b) => b.classList.remove("active"));
+      event.target.classList.add("active");
+
+      items.forEach((item) => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+          setTimeout(() => item.classList.add("visible"), 200);
+        } else {
+          item.style.display = "none";
+          item.classList.remove("visible");
+        }
+      });
+    }
+
+    // Scroll animation
+    const items = document.querySelectorAll(".timeline-item");
+    const revealOnScroll = () => {
+      items.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+</body>
+</html>
+
+<footer>
+    <p>&copy; 2025 Hope Farm Foundation | <a href="terms.html">Terms & Conditions</a> | <a href="project-timeline.html">Project Timeline</a>
+        | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
