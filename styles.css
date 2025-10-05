@@ -3,6 +3,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: whitesmoke;
   color: #333;
+  font-size: 110%;
 }
 
 .content {
@@ -108,6 +109,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding: 20px
 }
 
 .project-card {
@@ -179,7 +181,7 @@ footer {
 
 .hero {
   background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover no-repeat;
-  height: 60vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,42 +348,6 @@ footer {
   background: #1b5e20;
 }
 
-
-/* Navbar base */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background: #388e3c;
-  color: white;
-}
-
-.navbar .logo {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
-.hamburger {
-  display: none;
-  font-size: 1.6rem;
-  background: none;
-  border: green;
-  color: white;
-  cursor: pointer;
-}
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -563,6 +529,8 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 1.5rem;
+  top: 0;
+  
 }
 footer p {
   margin: 0;
@@ -884,16 +852,21 @@ footer .social-icons a {
   text-decoration: underline;
 }
 
+/*Nav bar fixed position fixed*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* ensures it stays above all other elements */
+}
 
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
 
+body {
+  padding-top: 90px;
 
-
-
-
-
-
-
- 
-
-
-
+}

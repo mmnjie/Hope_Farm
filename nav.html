@@ -1,47 +1,118 @@
-<!-- navbar.html -->
-<nav class="navbar">
-  <div class="logo">🌱 Hope Farm Foundation</div> 
-  <a href="index.html">
-    </a>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Farm Foundation</title>
 
-  <!-- Hamburger Icon -->
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <!-- ✅ Bootstrap 5 CSS -->
+   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Navigation Links -->
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="donate.html">Donate</a></li>
-    <li><a href="volunteer.html">Volunteer</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+
+
+  <style>
+    /* 🌿 Custom Theme Colors */
+    .navbar {
+      background-color: #ffffff;
+      transition: background-color 0.2s ease-in;
+      position: fixed;
+      height: auto;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: index 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #0c6b1a !important;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      height: 60px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+    .nav-link {
+      color: #0c6b1a !important;
+      font-weight: 500;
+      transition: color 0.1s;
+    }
+    .nav-link:hover {
+      color: #ff7a00 !important;
+    }
+    .btn-donate {
+      background-color: #ff7a00;
+      color: #fff !important;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+    .btn-donate:hover {
+      background-color: #0c6b1a;
+      color: #fff !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🌱 Hope Farm Foundation Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Logo + Brand Name -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Hope Farm Foundation Logo">
+      Hope Farm Foundation
+    </a>
+
+    <!-- ✅ Hamburger Toggler Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    
+
+    <!-- ✅ Collapsible Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="donate.html" class="btn btn-donate">Donate</a>
+    </div>
+  </div>
 </nav>
 
-
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
-  }
-</script>
+<!-- ✅ Bootstrap 5 JS Bundle (Includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
-  <!-- Load Navbar -->
-  <script>
-    fetch("navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-
-    // Hamburger toggle logic (works after navbar is loaded)
-    document.addEventListener("click", function (e) {
-      if (e.target.classList.contains("hamburger")) {
-        document.getElementById("navLinks").classList.toggle("show");
-      }
-    });
-  </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
