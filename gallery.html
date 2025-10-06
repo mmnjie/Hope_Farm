@@ -22,7 +22,26 @@
       font-weight: bold;
       letter-spacing: 1px;
       animation: slideDown 1s ease-in-out;
+      position: fixed;
+      top: 0; /* Sticks to the top of the viewport */
+      left: 0;
+      width: 100%; /* Makes sure it stretches across the full screen */
+      z-index: 1000; /* Keeps it on top of other content */
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
     }
+
+    @media (max-width: 600px) {
+  .gallery-header {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  body {
+    padding-top: 60px; /* smaller header height on mobile */
+  }
+}
+
 
     @keyframes slideDown {
       from { transform: translateY(-100%); opacity: 0; }
@@ -158,7 +177,7 @@
   <header>🌱 Hope Farm Foundation Gallery</header>
 
   <main>
-    <h1>Community Gallery</h1>
+    <h1>Community Gallary</h1>
     <p style="text-align:center; max-width:700px; margin:auto; margin-bottom:40px;">
       Explore photos, videos, and stories from our community voluntary programs, initiatives, and events. 
       Use the filters below to browse specific categories.
