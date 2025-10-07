@@ -159,7 +159,28 @@
       max-width: 700px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       animation: popUp 0.6s ease;
+      
+      
+      
     }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      max-width: 600px; /* prevents images from becoming too big on desktop */
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+}
+
+/* For smaller mobile screens */
+@media (max-width: 600px) {
+  .modal-content img {
+    max-width: 90%;  /* image takes up 90% of mobile width */
+    height: auto;
+  }
+}
+
 
     .close {
       color: #333;
@@ -209,14 +230,15 @@
 
   <main class="timeline">
     <div class="timeline-item past" onclick="openModal('modal1')">
-      <h2>One Million </h2>
-      <span>Youth Agri-Tech Empowerment | 2022</span>
-      <p>Empowering local farmers through shared resources and organic cultivation methods.</p>
-      <img src="images/ricefarm.jpg" alt="Community Rice Field" />
+      <h2>🌾 Farming Workshop</h2>
+      <span>Past Project | 2024</span>
+      <p>The Hope Farm Foundation Farming Workshop is a hands-on training program designed to empower local farmers, youth, 
+        and aspiring agripreneurs with modern and sustainable farming skills.</p>
+      <img src="images/projectimeline2/projectimeline1.jpg" alt="Community Rice Field" />
     </div>
 
     <div class="timeline-item ongoing" onclick="openModal('modal2')">
-      <h2>Grow One Million Trees Initiative</h2>
+      <h2>🌿 Grow One Million Trees</h2>
       <span>Ongoing Project | 2025</span>
       <p>The Grow One Million Trees Initiative is the flagship environmental program of the Hope Farm Foundation,
         designed to combat deforestation, restore degraded lands, and promote climate resilience across communities.</p>
@@ -235,9 +257,13 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h2>Community Rice Field Initiative</h2>
-      <p>This project supported over 50 rural farmers in organic rice production, introducing irrigation and soil fertility techniques that improved yields by 40%.</p>
-      <img src="images/ricefarm1.jpg" alt="Rice Field" />
+      <h2>Farming Workshop</h2>
+      <p>The workshop blends traditional agricultural knowledge with innovative practices such as 
+        organic farming, composting, irrigation management, and climate-smart agriculture.
+        Encourages collaboration among farmers, volunteers, and local institutions to create stronger 
+        agricultural networks and supports the production of healthy, locally grown food and reduces 
+        dependence on imported produce.</p>
+      <img src="images/projectimeline2/projectimeline1.jpg" alt="Rice Field" />
       <img src="images/ricefarm2.jpg" alt="Rice Harvest" />
     </div>
   </div>
@@ -254,6 +280,9 @@
         By <strong>2030,</strong> it seeks to transform degraded lands into thriving green spaces and inspire collective action for a greener future.</p>
       <img src="images/projectimeline/projectimeline.jpg" alt="Youth Training" />
       <img src="images/projectimeline/projectimeline2.jpg" alt="Workshop" />
+      <img src="images/projectimeline/projectimeline3.jpg" alt="Workshop" />
+      <img src="images/projectimeline/projectimeline4.jpg" alt="Workshop" />
+      <img src="images/projectimeline/projectimeline5.jpg" alt="Workshop" />
     </div>
   </div>
 
