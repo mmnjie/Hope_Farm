@@ -21,6 +21,7 @@
       margin: 0;
       background: #f7f9fc;
       color: #333;
+      padding-top: 101px;
     }
     header {
       background: #2e7d32;
@@ -50,40 +51,32 @@
     <p>Empowering Farmers - Women - Youths & Communities</p>
   </header>
 
-  <section class="content">
+  </head>
+<body>
+  <div class="container">
     <h2>Volunteer With Us</h2>
-    <p>Join our mission to support sustainable farming, empower local communities, and promote food security. Fill out the form below to become a volunteer with Hope Farm Foundation.</p>
-    <div class="volunteer-box">
-    <!-- Volunteer Form -->
-     <!-- Replace 'yourFormID' with your actual Formspree form ID -->
-    <form class="volunteer-form" action="https://formspree.io/f/mvgwrkql" method="POST">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" placeholder="Your Name" required>
+    <p>Join our mission to support sustainable farming, empower local communities, and promote food security.</p>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" placeholder="Your Email" required>
-
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" placeholder="Your Phone Number" required>
-
-      <label for="interest">Area of Interest</label>
-      <select id="interest" required>
+    <form action="https://formspree.io/f/mrbyloeg" method="POST">
+      <input type="text" name="Full Name" placeholder="Full Name" required>
+      <input type="email" name="Email Address" placeholder="Email Address" required>
+      <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+      
+      <label for="interest">Area of Interest:</label>
+      <select name="Area of Interest" id="interest" required>
         <option value="">Select an option</option>
-        <option value="community-farming">Community Farming</option>
-        <option value="youth-empowerment">Youth Empowerment</option>
-        <option value="sustainable-irrigation">Sustainable Irrigation</option>
-        <option value="organic-farming">Organic Farming</option>
-        <option value="general-support">General Support</option>
+        <option value="Community Farming">Community Farming</option>
+        <option value="Youth Empowerment">Youth Empowerment</option>
+        <option value="Sustainable Irrigation">Sustainable Irrigation</option>
+        <option value="Organic Farming">Organic Farming</option>
+        <option value="General Support">General Support</option>
       </select>
 
-      <label for="message">Why do you want to volunteer?</label>
-       <textarea id="message" name="message" rows="5" required></textarea>
-      
-
+      <textarea name="Why do you want to volunteer?" placeholder="Why do you want to volunteer?" required></textarea>
       <button type="submit">Submit Application</button>
     </form>
-  </section>
-
+  </div>
+</body>
 
   
 <!-- Include Swiper CSS -->
@@ -106,7 +99,7 @@
         <div class="card">
           <img src="images/volunteer1.jpg" alt="Volunteer 1" />
           <div class="card-content">
-            <h3>Fatou, Kanifing</h3>
+            <h3>Fatou Sawo</h3>
             <p>
               “Volunteering at Hope Farm Foundation has been one of the most rewarding experiences of my life.
               Working with farmers to improve crop yields through sustainable methods showed me how small actions
@@ -121,7 +114,7 @@
         <div class="card">
           <img src="images/volunteer2.jpg" alt="Volunteer 2" />
           <div class="card-content">
-            <h3>Muhammed, Banjul</h3>
+            <h3>Salimatou Jallow</h3>
             <p>
               “I joined Hope Farm Foundation to help train young people in modern farming skills. What I didn’t expect
               was how much I would learn myself from teamwork, patience, and the joy of seeing others grow in
@@ -136,9 +129,9 @@
         <div class="card">
           <img src="images/volunteer3.jpg" alt="Volunteer 3" />
           <div class="card-content">
-            <h3>Ebrima, Kiang</h3>
+            <h3>Abdou & Lamin</h3>
             <p>
-              “Teaching rural families about organic farming and water conservation helped me understand the deep
+              “Teaching rural families about organic farming and water conservation helped us understand the deep
               connection between people and the land. It’s amazing to see the positive environmental impact of our
               collective effort.”
             </p>
@@ -151,7 +144,7 @@
         <div class="card">
           <img src="images/volunteer4.jpg" alt="Volunteer 4" />
           <div class="card-content">
-            <h3>Sainabou, Brikama</h3>
+            <h3>Fawuro E. Ndongo</h3>
             <p>
               “Being part of the irrigation initiative was eye-opening. We built systems that now help farmers grow
               was a new learning experience. It’s a place where passion and purpose meet.”
@@ -160,6 +153,7 @@
         </div>
       </div>
     </div>
+
 
  <!-- Slider controls -->
     <div class="swiper-pagination"></div>
@@ -210,14 +204,14 @@
         Empowering communities with innovative solutions, education, and support 
         for a better future.
       </p>
-      <p><strong>Contact:</strong> +220 700-1630 | info@yourorg.com</p>
+      <p><strong>Contact:</strong> +220 700-1630 | f.sawocamara58@yahoo.com</p>
       <p>North Bank Region, Banjul, The Gambia</p>
       <div class="social-links">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="https://wa.me/60123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/2207001630" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
 
@@ -242,7 +236,7 @@
     
     <div style="flex:1; text-align:center; min-width:250px;">
       <p style="margin:0; font-size:19px;">
-        <strong>TEXT HOPE TO 70111</strong> TO DONATE TO OUR FOUNDATION
+        TEXT <strong>HOPE</strong> TO 70111 TO DONATE TO OUR FOUNDATION
       </p>
     </div>
 
@@ -264,13 +258,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
- 

@@ -230,6 +230,7 @@ footer {
 .volunteer-highlights {
   padding: 50px 10px;
   background: #f9f9f9;
+  
 }
 .cards {
   display: grid;
@@ -244,7 +245,8 @@ footer {
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s;
-}
+  }
+
 .card img {
   width: 100%;
   height: 200px;
@@ -699,7 +701,7 @@ footer .social-icons a {
 
 /* Volunteers  wit us 2 Section - Testimonials */
 .volunteers {
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -876,3 +878,101 @@ body {
 }
 
 
+/* Send Us a Message - contact latest*/
+
+.contact-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      
+    }
+    h2 {
+      text-align: center;
+      color: #2b7a3d;
+    }
+
+      form input, form textarea, form button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    button {
+      background: #2b7a3d;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #45a049;
+    }
+
+
+/* Volunteer wit Us latest*/
+      form input, form select, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    form select {
+      background-color: #fff;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+    button {
+      background: #2b7a3d;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  
+
+    /* Send Us a Message latest*/
+  
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2b7a3d;
+    }
+
+
+
+    @media (max-width: 768px) {
+  .main-header {
+    padding-top: 100px; /* smaller gap for phones */
+  }
+}
+
+
+
+    
